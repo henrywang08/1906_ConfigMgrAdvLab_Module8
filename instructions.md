@@ -3,8 +3,7 @@
 #Module 8, Lab 1, Exercise 1 - Global Data Replication
 
 ##Scenario
-The IT Administrator of Contoso.com is keen to see the changes in site-to-site replication, and so decides to create a new collection to start replication.
-
+The IT Administrator of Contoso.com is keen to see the changes in site-to-site replication. He wants to test how a collection is replicated.
 > In this exercise you will:  
 - Demonstrate how global data, such as collection defination, is replicated.
 
