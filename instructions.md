@@ -1,4 +1,4 @@
-#WorkshopPLUS - System Center Configuration Manager: Concepts and Administration Advanced (1902)
+#WorkshopPLUS - System Center Configuration Manager: Concepts and Administration Advanced (1906)
 
 #Module 8, Lab 1, Exercise 1 - Global Data Replication
 
