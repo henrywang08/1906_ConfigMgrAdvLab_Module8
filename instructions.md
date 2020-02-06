@@ -1,4 +1,4 @@
-#WorkshopPLUS - System Center Configuration Manager: Advanced Concepts and Cloud Services (1906)
+#WorkshopPLUS - Microsoft Endpoint Manager: Advanced Concepts and Cloud Services​
 
 #Module 8, Lab 1, Exercise 1 - Global Data Replication
 
