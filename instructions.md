@@ -341,7 +341,7 @@ Click **Next** to advance to the next exercise.
 #Module 8, Lab 2, Exercise 1 - Configure Certificates for Site System Roles with IIS Installed
 
 ##Scenario
-The IT Administrator in Contoso.com is asked to configure the certificates on Site Server Roles that requires IIS.
+The IT Administrator in Contoso.com is asked to enable HTTPs communication bwtween ConfigMgr client and Site Server Roles that requires IIS in NYC site.
 
 >
 In this exercise you will:  
@@ -352,6 +352,44 @@ In this exercise you will:
 1. []Log on to **NYCCFG** using the following credentials:  
 	- **User name**: Contoso\\Administrator  
 	- **Password**: +++Pa$$w0rd+++
+
+1. []Right click **Start icon**, click **Run**, type +++*certlm.msc*+++.   
+
+1. []In certlm window, expand **Personal** - **Certificates**.
+
+	!IMAGE[Screenshot](screens/nyccfgcertlm1.jpg)
+
+
+1. []Right click **Certificates**, click **All Tasks** - **Request New Certificate...**
+
+	!IMAGE[Screenshot](screens/nyccfgcertlm2.jpg)
+
+1. []In **Before You Begin**, click **Next**. 
+
+1. []In **Select Certificate Enrollment Policy**, select **Active Directory Enrollment Policy**, click **Next**. 
+
+	!IMAGE[Screenshot](screens/nyccfgcertlm3.jpg)
+
+1. []In **Request Certificates**, select to check **ConfigMgr Web Server Certificate**, click **More information is required to enroll for this certificate.** link. 
+
+	!IMAGE[Screenshot](screens/nyccfgcertlm4.jpg)
+
+1. []In **Certificate Properties** window, make the following coinfiguraiton:
+	- **Subject** tab
+		- **Subject Name:** 
+			- **Type:**: select **Common Name**
+			- **Value:**: +++*NYCCFG.contoso.com*+++
+			- Click **Add >**
+		- **Alernative name:**
+			- **Type:**: select **DNS**
+			- **Value:**: +++*NYCCFG.contoso.com*+++
+			- Click **Add >**
+			- **Value:** +++*NYCCFG*+++
+			- Click **Add >**
+
+	!IMAGE[Screenshot](screens/nyccfgcertlm5.jpg)
+
+
 
 1. []In **Server Manager** console, click **Tools** menu, select **Internet Information Services \(IIS\) Manager** to launch it.
 
