@@ -96,16 +96,16 @@ In this exercise you will:
 
 1. []Click **Skip this Rule** button if you see the following screen.
 
-	!IMAGE[Screenshot](PR2RLA1.jpg)
+	!IMAGE[Screenshot](screens/PR2RLA1.jpg)
 
-	!IMAGE[Screenshot](PR2RLA2.jpg)
+	!IMAGE[Screenshot](screens/PR2RLA2.jpg)
 
 
 1. []Click **View Report** to review **Replication Link Analyzer** report.
 
-	!IMAGE[Screenshot](PR2RLA3.jpg)
+	!IMAGE[Screenshot](screens/PR2RLA3.jpg)
 
-	!IMAGE[Screenshot](PR2RLA4.jpg)
+	!IMAGE[Screenshot](screens/PR2RLA4.jpg)
 
 **Note: You can ignore message "Check if change tracking records are cleaned up on sql server"**	
 
