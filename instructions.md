@@ -374,14 +374,14 @@ In this exercise you will:
 
 	!IMAGE[Screenshot](screens/nyccfgcertlm4.jpg)
 
-1. []In **Certificate Properties** window, make the following coinfiguraiton:
+1. []In **Certificate Properties** window, make the following coinfiguraitons:
 	- **Subject** tab
 		- **Subject Name:** 
-			- **Type:**: select **Common Name**
-			- **Value:**: +++*NYCCFG.contoso.com*+++
+			- **Type:** select **Common Name**
+			- **Value:** +++*NYCCFG.contoso.com*+++
 			- Click **Add >**
 		- **Alernative name:**
-			- **Type:**: select **DNS**
+			- **Type:** select **DNS**
 			- **Value:**: +++*NYCCFG.contoso.com*+++
 			- Click **Add >**
 			- **Value:** +++*NYCCFG*+++
@@ -389,7 +389,16 @@ In this exercise you will:
 
 	!IMAGE[Screenshot](screens/nyccfgcertlm5.jpg)
 
+	- **General** tab
+		- **Friendly name:** +++*NYCCFG IIS Server Certificate*+++
 
+	!IMAGE[Screenshot](screens/nyccfgcertlm6.jpg)
+
+1. []Click **OK**, then click **Enroll**. 
+
+	!IMAGE[Screenshot](screens/nyccfgcertlm7.jpg)
+
+1. []Click **Finish**
 
 1. []In **Server Manager** console, click **Tools** menu, select **Internet Information Services \(IIS\) Manager** to launch it.
 
@@ -399,61 +408,11 @@ In this exercise you will:
 
 1. []Click **https** type and select **Edit**
 
-1. []On the **Edit Site Binding** dialog box, under **SSL certificate,** click **Not selected** to expand the dropdown menu, and select the certificate "3B86E76921A1B6EA94DC028FD41359B692C8A597". Click OK.
-
-	> [!KNOWLEDGE] Note: The select ceritificte 3B86E76921A1B6EA94DC028FD41359B692C8A597 is created using **ConfigMgr Web Server** certificate template. You can click **View** in **Edit Site Biding** dialog box, on the **Certificate** window, click **Details** tab, select **Extensions Only** in **Show:** drop-down list, click **Certificate Template Information** in the **Field** column. You should see the template name is **ConfigMgr Web Server**.
+1. []On the **Edit Site Binding** dialog box, under **SSL certificate,** click **Not selected** to expand the dropdown menu, and select the certificate **NYCCFG IIS Server Certificate**. Click OK.
 
 	!IMAGE[Screenshot](screens/920759.jpg)
 
 
-	> Switch to @lab.VirtualMachine(NYCCAS).SelectLink
-
-1. []Log on to **NYCCAS** using the following credentials:  
-	- **User name**: Contoso\\Administrator  
-	- **Password**: +++Pa$$w0rd+++
-
-
-1. []In **Server Manager** console, click **Tools** menu, select **Internet Information Services \(IIS\) Manager** to launch it.
-
-
-1. []Expand **NYCCAS \(CONTOSO\\administrator\).**
-
-1. []Expand **Sites**, right-click **WSUS Administration** and then select **Edit Bindings**.
-
-1. []Click **https** type and select **Edit**
-
-1. []On the **Edit Site Binding** dialog box, under **SSL certificate,** click **Not selected** to expand the dropdown menu, and select the certificate start with "**C716**". Click **OK**.
-	
-	
-	
-
-	> [!KNOWLEDGE] Note: The select ceritificte start with **C716** is created using **ConfigMgr Web Server** certificate template. You can click **View** in **Edit Site Binding**. diaglog box, on the **Certificate** window, click **Details** tab, select **Extensions Only** in **Show:** drop-down list, click **Certificate Template Information** in the **Field** column. You should see the template name is **ConfigMgr Web Server**.
-
-	!IMAGE[Screenshot](screens/c96177fe.jpg)
-
-
-
-	> Switch to @lab.VirtualMachine(NYCDC).SelectLink
-
-1. []Log on to **NYCDC** using the following credentials:  
-	- **User name**: Contoso\\Administrator  
-	- **Password**: +++Pa$$w0rd+++
-
-1. []In **Server Manager** console, click **Tools** menu, select **Internet Information Services \(IIS\) Manager** to launch it.
-
-
-1. []Expand **NYCDC \(CONTOSO\\administrator\).** 
-
-1. []Expand **Sites**, right-click **Default Web Site**, select **Edit Bindings**.
-1. []Click **Add..** button.
-1. []In **Add Site Binding** dialog box, under **Type**, select **https**. Under **SSL certificate,** click **Not selected** to expand the dropdown menu, and select the certificate start with "**5444**". Click **OK**. Click **Close**.
-	
-	
-	
-
-	> [!KNOWLEDGE] Note: The select ceritificte is created using **ConfigMgr Web Server** certificate template. You can click **View** in **Edit Site Biding** dialog box, on the **Certificate** window, click **Details** tab, select **Extensions Only** in **Show:** drop-down list, click **Certificate Template Information** in the **Field** column. You should see the template name is **ConfigMgr Web Server**.
-
-	!IMAGE[Screenshot](screens/f1fae9f4.jpg)
 
 
 
