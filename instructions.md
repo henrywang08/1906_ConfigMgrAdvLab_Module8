@@ -132,6 +132,7 @@ In this exercise you will:
 
 1. []In Configuration Manager Console, click **Monitoring** workspace and select **Database Replication** node. Refresh the node after about 5 minutes. The **Link State** between CAS &lt;-&gt; PR2 will change to **Link Degraded**.
 
+	!IMAGE[Screenshot](screens/PR2LinkDegraded.jpg)
 
 
 1. []On Results pane of **Database Replication** node, select the row where **Child Site** column is **PR2**. Click **Replication Link Analyzer** from Ribbon.
