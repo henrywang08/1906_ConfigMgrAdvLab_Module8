@@ -155,7 +155,7 @@ In this exercise you will:
 
 1. []click **Close** to close Replication Link Analyzer window.
 
-	!IMAGE[Screenshot](Screens/tovna5s3.jpg)
+	!IMAGE[Screenshot](screens/tovna5s3.jpg)
 
 **Note: Ignore message "Check if change tracking records are cleaned up on sql server".**	
 
@@ -170,7 +170,7 @@ In this exercise you will:
 	>    
 	>  Link Failed - Replication between the sites is not functional.
 
-	!IMAGE[Screenshot](Screens/50eizqs4.jpg)
+	!IMAGE[Screenshot](screens/50eizqs4.jpg)
 
 
 1. []Right click empty space on Taskbar, select **Show the desktop**. 
@@ -179,7 +179,7 @@ In this exercise you will:
 
 1. []Double click **ReplicationAnalysis.htm** file to view the content.
 
-	!IMAGE[Screenshot](Screens/zh0hrfvm.jpg)
+	!IMAGE[Screenshot](screens/zh0hrfvm.jpg)
 
 
 **Congratulations!  **
@@ -216,7 +216,7 @@ In this exercise you will:
 1. []Type the SQL command in the query window - +++*EXEC CM\_PR2.dbo.spDrsSendSubscriptionInvalid 'PR2', 'CAS', 'Configuration Data'*+++
 1. []Click **Query** and then click **Execute**. The result will show 0. Record the timestamp when you see the result.
 
-	!IMAGE[Screenshot](Screens/ygr4xb3c.jpg)
+	!IMAGE[Screenshot](screens/ygr4xb3c.jpg)
 
 
 	> Switch to @lab.VirtualMachine(NYCCAS).SelectLink
@@ -238,7 +238,7 @@ In this exercise you will:
 
 1. []Search up for "+++*Checking if we need to create an initialization+++"*. You will find a message "**Checking if we need to create an initialization package for replication group Configuration Data for site PR2**" logged within 5 minutes after you execute the SQL command on NYCPR2.
 	
-	!IMAGE[Screenshot](Screens/bj3vwyev.jpg)
+	!IMAGE[Screenshot](screens/bj3vwyev.jpg)
 
 
 1. []View the messages below "**Checking if we need to create an initialization package for replication group Configuration Data for site PR2**". You will see BCP is used to export the global configuration data tables to files. 
@@ -248,7 +248,7 @@ In this exercise you will:
 	>  bcp Utility  
 	>  https://msdn.microsoft.com/en-us/library/ms162802.aspx
 
-	!IMAGE[Screenshot](Screens/nstrtgp0.jpg)
+	!IMAGE[Screenshot](screens/nstrtgp0.jpg)
 
 
 
@@ -259,7 +259,7 @@ In this exercise you will:
 
 1. []Search up for "+++*DRS Initialization for Site \[PR2\]*+++". You may see several "**DRS Initialization for Site \[PR2\]**" messages in the log files, while the first related message should be within 5 - 10 minutes after you execute the SQL command on NYCPR2.
 
-	!IMAGE[Screenshot](Screens/xnhpys2f.jpg)
+	!IMAGE[Screenshot](screens/xnhpys2f.jpg)
 
 1. []In **Configuration Manager Trace Log Tool** window, click **File** and then click **Open**.
 
@@ -268,13 +268,13 @@ In this exercise you will:
 1. []Click Tools and then click Find
 1. []Search up for "+++*CabFiles\\PR2\_*+++". You may see one message like "**Package file = E:\\Program Files\\Microsoft Configuration Manager\\inboxes\\rcm.box\\CabFiles\\PR2\_.cab**".
 	
-	!IMAGE[Screenshot](Screens/s2hx5qax.jpg)
+	!IMAGE[Screenshot](screens/s2hx5qax.jpg)
 
 1. []View the messages below &quot;**Package file = E:\\Program Files\\Microsoft Configuration Manager\\inboxes\\rcm.box\\CabFiles\\PR2\_<guid>.cab</guid>**&quot;.
 
 	> [!KNOWLEDGE] Note: You will find message like &quot;**Wrote 230212 bytes to \\\\NYCPR2.CONTOSO.COM\\SMS\_SITE\\1002VCAS.PCK at position 2829312**&quot;, before message &quot;**Sending completed \[E:\\Program Files\\Microsoft Configuration Manager\\inboxes\\rcm.box\\CabFiles\\PR2\_<guid>.cab</guid>**&quot;. 
 
-	!IMAGE[Screenshot](Screens/f1nu0ahz.jpg)
+	!IMAGE[Screenshot](screens/f1nu0ahz.jpg)
 
 	> Switch to @lab.VirtualMachine(NYCPR2).SelectLink
 
@@ -291,7 +291,7 @@ In this exercise you will:
 	
 	
 
-	!IMAGE[Screenshot](Screens/45ckznfi.jpg)
+	!IMAGE[Screenshot](screens/45ckznfi.jpg)
 
 
 1. []In **Microsoft SQL Sever Management Studio**, click **File**, click **New**, and then click **Query with Current Connection**.
@@ -302,7 +302,7 @@ In this exercise you will:
 	
 
 	
-	!IMAGE[Screenshot](Screens/b4qpaa52.jpg)
+	!IMAGE[Screenshot](screens/b4qpaa52.jpg)
 
 
 	> Switch to @lab.VirtualMachine(NYCCAS).SelectLink
@@ -318,12 +318,12 @@ In this exercise you will:
 1. []In Configuration Manager Console, click **Monitoring** workspace and select **Database Replication** node. Verify the replication **Link State** between CAS &lt;-&gt; PR2 is **Link Active**.
 
 
-	!IMAGE[Screenshot](Screens/mzy0p3yn.jpg)
+	!IMAGE[Screenshot](screens/mzy0p3yn.jpg)
 
 
 1. []In Configuration Manager Console, click **Monitoring** workspace and select **Site Hierarchy** node. Verify all sites are green.
 
-	!IMAGE[Screenshot](Screens/kdtm2hkc.jpg)
+	!IMAGE[Screenshot](screens/kdtm2hkc.jpg)
 
 
 
