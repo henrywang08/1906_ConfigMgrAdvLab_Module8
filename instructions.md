@@ -137,7 +137,6 @@ In this exercise you will:
 
 1. []On Results pane of **Database Replication** node, select the row where **Child Site** column is **PR2**. Click **Replication Link Analyzer** from Ribbon.
 
-	!IMAGE[Screenshot](screens/920729.jpg)
 
 
 1. []View the Replication Link Analyzer result.
