@@ -15,16 +15,19 @@ The IT Administrator of Contoso.com is keen to see the changes in site-to-site r
 
 
 
-1. []Click Configuration Manager Console icon from Taskbar.
+1. []Open **Configuration Manager Console**.
 
 
 
 1. []In **Configuration Manager Console**, click **Assets and Compliance** workspace. Right-click **Device Collections** and select **Create Device Collection**.
 
 
-1. []On the **General** page of **Create Device Collection Wizard**, configure as below, then click **Summary**. Click OK for "**Configuration Manager**" warning message.  
+1. []On the **General** page of **Create Device Collection Wizard**, configure as below, 
 	- **Name:** *Collection in NYC Site*  
 	- **Limiting Collection:** *All Desktop and Server Clients*
+
+1. []Click **Summary**. Click OK for "**Configuration Manager**" warning message.  
+
 
 1. []On **Summary** page, review the settings, click **Next**
 1. []On **Completion** page, click **Close**
@@ -37,7 +40,7 @@ The IT Administrator of Contoso.com is keen to see the changes in site-to-site r
 	- **User name**: Contoso\\Administrator  
 	- **Password**: +++Pa$$w0rd+++
 
-1. []Click Configuration Manager Console icon from Taskbar.
+1. []Open **Configuration Manager Console**.
 
 
 1. []In **Configuration Manager Console**, click **Assets and Compliance** workspace, click **Device Collections** node.
@@ -46,7 +49,7 @@ The IT Administrator of Contoso.com is keen to see the changes in site-to-site r
 
 	> [!KNOWLEDGE] **Question**: Will you see collection "Collection in NYC Site" in PR2 site? Why?  
 	>    
-	>  **Answer**: Collection definition is one part of Global Data, which will be replicated to all sites in the hierarchy.
+	>  **Answer**: Collection definition is a part of Global Data, which is replicated to all sites in the hierarchy.
 
 	!IMAGE[Screenshot](screens/920719.jpg)
 
@@ -80,10 +83,10 @@ In this exercise you will:
 
 
 
-1. []Click Configuration Manager Console icon from Taskbar.
+1. []Open **Configuration Manager Console**.
 
 
-1. []In Configuration Manager Console, click **Monitoring** workspace and select **Database Replication** node.
+1. []In **Configuration Manager Console**, click **Monitoring** workspace and select **Database Replication** node.
 
 
 1. []On **Results** pane of **Database Replication** node, select the row where **Child Site** column is **PR2**. Click **Replication Link Analyzer** from Ribbon.
@@ -91,11 +94,20 @@ In this exercise you will:
 	!IMAGE[Screenshot](screens/920723.jpg)
 
 
-1. []Review **Replication Link Analyzer** report.
+1. []Click **Skip this Rule** button if you see the following screen.
 
-	!IMAGE[Screenshot](Screens/rpuzldfl.jpg)
+	!IMAGE[Screenshot](Screens/PR2RLA1.jpg)
 
-**Note: Ignore message "Check if change tracking records are cleaned up on sql server".**	
+	!IMAGE[Screenshot](Screens/PR2RLA2.jpg)
+
+
+1. []Click **View Report** to review **Replication Link Analyzer** report.
+
+	!IMAGE[Screenshot](Screens/PR2RLA3.jpg)
+
+**Note: You can ignore message "Check if change tracking records are cleaned up on sql server"**	
+
+	!IMAGE[Screenshot](Screens/PR2RLA4.jpg)
 
 
 > Switch to @lab.VirtualMachine(NYCPR2).SelectLink
@@ -295,7 +307,7 @@ In this exercise you will:
 	- **User name**: Contoso\\Administrator  
 	- **Password**: +++Pa$$w0rd+++
 
-1. []Click Configuration Manager Console icon from Taskbar.
+1. []Open **Configuration Manager Console**.
 
 
 
@@ -434,7 +446,7 @@ In this exercise you will:
 	- **Password**: +++Pa$$w0rd+++
 
 
-1. []Click Configuration Manager Console icon from Taskbar.
+1. []Open **Configuration Manager Console**.
 
 	!IMAGE[Screenshot](screens/5eeb97c0.jpg)
 
