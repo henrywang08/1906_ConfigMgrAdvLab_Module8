@@ -413,7 +413,20 @@ In this exercise you will:
 	!IMAGE[Screenshot](screens/920759.jpg)
 
 
+> Switch to @lab.VirtualMachine(NYCDC).SelectLink
 
+1. []Log on to **NYCDC** using the following credentials:  
+	- **User name**: Contoso\\Administrator  
+	- **Password**: +++Pa$$w0rd+++
+
+1. []In **Server Manager** console, click **Tools** menu, select **Internet Information Services \(IIS\) Manager** to launch it.
+
+
+1. []Expand **NYCDC \(CONTOSO\\administrator\).** 
+
+1. []Expand **Sites**, right-click **Default Web Site**, select **Edit Bindings**.
+1. []Click **Add..** button.
+1. []In **Add Site Binding** dialog box, under **Type**, select **https**. Under **SSL certificate,** click **Not selected** to expand the dropdown menu, and select the certificate start with "**5444**". Click **OK**. Click **Close**.
 
 
 **Congratulations!  **
