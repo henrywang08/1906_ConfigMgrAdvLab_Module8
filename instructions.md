@@ -512,28 +512,14 @@ In this exercise you will:
 
 1. []Open **Configuration Manager Console**.
 
-	!IMAGE[Screenshot](screens/5eeb97c0.jpg)
 
 
 1. []Click **Administration** workspace, expand **Site Configuration**.
 1. []Click **Sites**, select "**NYC - Contoso NYC Primary Site**" in result pane. Click **Properties** in the ribbon.
-1. []Click **Client Computer Communication** tab, select **HTTPS only**. Click **OK**.
+1. []Click **Communication Security** tab, select **HTTPS only**, and uncheck **Clients check the certificate revocation list (CRL) for site systems**. Click **OK**.
 
 	!IMAGE[Screenshot](screens/a4e8cd66.jpg)
 
-1. []Click **Servers and Site System Roles**, select **\\\\NYCCFG.CONTOSO.COM**
-1. []Under **Site System Roles**, select **Distribution point**. Click **Properties** in the ribbon.
-1. []Select **Import certificate**. Type the following information, then click **OK**.
-	
-	  - **Certificate**: *\\\\nyccfg\\e$\\nyccfg\_dpcert.pfx*
-	  - **Password**: +++*Pa$$w0rd*+++
-	
-1. []Click **Yes** if there is a warning "**The certificate you specified is already in use**".
-	
-	
-	
-
-	!IMAGE[Screenshot](screens/35585bc9.jpg)
 
 
 	> Switch to @lab.VirtualMachine(NYCCFG).SelectLink
@@ -593,6 +579,12 @@ In this exercise you will:
 1. []Verify **Client certificate** property value is **PKI**.
 
 	!IMAGE[Screenshot](screens/eb2323d4.jpg)
+
+1. []In **Actions** tab, triger **Machine Policy Retrieval & Evaluation Cycle**. 
+
+1. []Open a Powershell window, type command +++*netstat -an | findstr "192.168.58.29"*+++. Verify 443 port is used by client to communicate with server NYCCFG.contoso.com. 
+
+	!IMAGE[Screenshot](screens/nyccl1https.jpg)
 
  
 	> Switch to @lab.VirtualMachine(NYCCAS).SelectLink
