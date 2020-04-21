@@ -148,7 +148,10 @@ In this exercise you will:
 1. []Click **Restart the SMS\_EXECUTIVE service** in **CAS &lt;-&gt; PR2 Replication Link Analyzer** window.
 1. []Click **Continue.**
 1. []Click **OK** in **Replicaiton Link Analyzer** window.
-1. []Click **Check to see if the problem** **is fixed** in **CAS &lt;-&gt; PR2 Replication Link Analyzer** window.
+1. []Click **Check to see if the problem** **is fixed** in **CAS &lt;-&gt; PR2 Replication Link Analyzer** window. 
+
+1. []Click **Skip this rule** if you see "Clean up change tracking records on SQL Server". 
+
 
 1. []click **Close** to close Replication Link Analyzer window.
 
