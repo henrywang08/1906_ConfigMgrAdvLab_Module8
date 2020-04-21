@@ -423,12 +423,12 @@ In this exercise you will:
 
 1. []In certlm window, expand **Personal** - **Certificates**.
 
-	!IMAGE[Screenshot](screens/nyccfgcertlm1.jpg)
+	!IMAGE[Screenshot](screens/nycdccertlm1.jpg)
 
 
 1. []Right click **Certificates**, click **All Tasks** - **Request New Certificate...**
 
-	!IMAGE[Screenshot](screens/nyccfgcertlm2.jpg)
+	!IMAGE[Screenshot](screens/nycdccertlm2.jpg)
 
 1. []In **Before You Begin**, click **Next**. 
 
@@ -438,31 +438,31 @@ In this exercise you will:
 
 1. []In **Request Certificates**, select to check **ConfigMgr Web Server Certificate**, click **More information is required to enroll for this certificate.** link. 
 
-	!IMAGE[Screenshot](screens/nyccfgcertlm4.jpg)
+	!IMAGE[Screenshot](screens/nycdccertlm4.jpg)
 
 1. []In **Certificate Properties** window, make the following coinfiguraitons:
 	- **Subject** tab
 		- **Subject Name:** 
 			- **Type:** select **Common Name**
-			- **Value:** +++*NYCCFG.contoso.com*+++
+			- **Value:** +++*NYCDC.contoso.com*+++
 			- Click **Add >**
 		- **Alernative name:**
 			- **Type:** select **DNS**
-			- **Value:**: +++*NYCCFG.contoso.com*+++
+			- **Value:**: +++*NYCDC.contoso.com*+++
 			- Click **Add >**
-			- **Value:** +++*NYCCFG*+++
+			- **Value:** +++*NYCDC*+++
 			- Click **Add >**
 
-	!IMAGE[Screenshot](screens/nyccfgcertlm5.jpg)
+	!IMAGE[Screenshot](screens/nycdccertlm5.jpg)
 
 	- **General** tab
-		- **Friendly name:** +++*NYCCFG IIS Server Certificate*+++
+		- **Friendly name:** +++*NYCDC IIS Server Certificate*+++
 
-	!IMAGE[Screenshot](screens/nyccfgcertlm6.jpg)
+	!IMAGE[Screenshot](screens/nycdccertlm6.jpg)
 
 1. []Click **OK**, then click **Enroll**. 
 
-	!IMAGE[Screenshot](screens/nyccfgcertlm7.jpg)
+	!IMAGE[Screenshot](screens/nycdccertlm7.jpg)
 
 1. []Click **Finish**
 
@@ -473,7 +473,10 @@ In this exercise you will:
 
 1. []Expand **Sites**, right-click **Default Web Site**, select **Edit Bindings**.
 1. []Click **Add..** button.
-1. []In **Add Site Binding** dialog box, under **Type**, select **https**. Under **SSL certificate,** click **Not selected** to expand the dropdown menu, and select the certificate start with "**5444**". Click **OK**. Click **Close**.
+1. []In **Add Site Binding** dialog box, under **Type**, select **https**. Under **SSL certificate,** click **Not selected** to expand the dropdown menu, and select the certificate  "**NYCDC IIS Server Certificate**". Click **OK**. Click **Close**.
+
+	!IMAGE[Screenshot](screens/nycdciiscert.jpg)
+
 
 
 **Congratulations!  **
